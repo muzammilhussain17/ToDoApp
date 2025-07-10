@@ -1,0 +1,112 @@
+*{
+    font-family: 'urbanist', sans-serif;
+}
+body {
+    font-family: 'Urbanist', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e7f0ff);
+    min-height: 100vh;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+.icon-heading {
+    color: #007bff;
+    font-size: 1.8rem;
+}
+
+.todo-form input {
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    transition: box-shadow 0.3s;
+}
+
+.todo-form input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+    border-color: #007bff;
+}
+
+.btn-add {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.todo-item {
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+    background: #f1f8ff;
+    transform: scale(1.01);
+}
+
+.icon-check {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-check:hover {
+    transform: rotate(20deg) scale(1.2);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.delete-btn i {
+    font-size: 1.2rem;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.delete-btn i:hover {
+    transform: rotate(-15deg);
+    color: #dc3545;
+}
+
+.no-todos {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
